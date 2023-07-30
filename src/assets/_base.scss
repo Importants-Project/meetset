@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//colors
+$primaryGradient: var(--primaryGradient);
+
+$black: #1e1e1e;
+$white: #ffffff;
+
+@include FontFace(TTInterfaces-Bold, "./font/TTInterfaces-Bold.ttf");
+@include FontFace(TTInterfaces-Light, "./font/TTInterfaces-Light.ttf");
+@include FontFace(TTInterfaces-Medium, "./font/TTInterfaces-Medium.ttf");
+@include FontFace(TTInterfaces-Regular, "./font/TTInterfaces-Regular.ttf");
+@include FontFace(TTInterfaces-DemiBold, "./font/TTInterfaces-DemiBold.ttf");
+
+.container {
+    max-width: 1960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    &:has(.main) {
+        padding: unset;
+    }
+}
+
+
+.animationLoad{
+    animation: loadAnimation 1s linear infinite;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #1681FF;
+}
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loadAnimation {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.p-relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.center__flex {
+    justify-content: center;
+    align-items: center;
+}
+
+p.errorText {
+    margin-left: 5px;
+}
+
+.errorText {
+    display: block;
+    margin-top: 14px;
+    margin-left: 20px;
+
+    &::before {
+        content: "";
+        background-image: url("../assets/images/svg/errorIcon.svg");
+        background-size: cover;
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        left: 0px;
+    }
+
+    font-family: TTInterfaces-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fd4c5c;
+}
+
+.loaderGif {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.success {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: green;
+    height: 57px;
+    width: 350px;
+    z-index: 15;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: TTInterfaces-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+.notFound {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 120px 0;
+    height: 100%;
+}
+
+
+    body > div:nth-child(3) {
+        display: none !important;
+    }

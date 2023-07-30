@@ -1,0 +1,26 @@
+.admin {
+    display: flex;
+    height: 100vh;
+
+
+    &RightSide {
+        width: 100%;
+        margin: 0 40px 0 270px;
+    }
+}
+
+
+@media screen and (max-height:860px) {
+#app{
+    height: auto;
+}
+}
+
+
+@media screen and (min-height:860px) {
+    #app{
+        height: 100vh;
+    }
+
+
+}

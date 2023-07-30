@@ -1,0 +1,276 @@
+select {
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("../assets/images/chevron-down.png");
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 15px;
+}
+#app{
+    position: relative;
+}
+
+.login {
+    background-color: $white;
+    width: 498px;
+    padding-top: 264px;
+    height: auto;
+
+    &__container {
+        width: auto;
+        margin: 0 0 0 88px;
+    }
+
+    &__box {
+        margin-left: 300px;
+
+        &-img {
+            height: 44px;
+            width: 198px;
+            margin-bottom: 72px;
+        }
+
+        &-form {
+            width: 320px;
+
+            .submit {
+                background-color: #155eef;
+                color: $white;
+                font-family: TTInterfaces-DemiBold, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 22px;
+                cursor: pointer;
+                margin-bottom: 32px;
+                height: 56px;
+                border-radius: 4px;
+                width: 320px;
+                margin-top: 24px;
+                border: 1px solid #cdd5df;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            position: relative;
+
+            .input {
+                height: 56px;
+                border: 1px solid #cdd5df;
+                border-radius: 4px;
+                padding: 16px;
+                margin: 24px 0 0;
+                width: 320px;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                font-family: TTInterfaces-Regular, sans-serif;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #cdd5df;
+                }
+
+
+            }
+
+            .formBox {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                &__img {
+                    position: absolute;
+                    right: 18px;
+                    margin-top: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-link {
+            font-family: TTInterfaces-DemiBold, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #202939;
+            text-decoration: none;
+
+        }
+
+        &-title {
+            font-family: TTInterfaces-Regular, sans-serif;
+            position: absolute;
+            bottom: 0;
+            color: #364152;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22px;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: center;
+            margin-left: 88px;
+
+            span {
+                font-weight: 400;
+                color: #155eef;
+            }
+        }
+    }
+
+    &Second__box {
+        overflow: hidden;
+        background: url('../assets/images/LoginBg.jpg') center center / cover no-repeat;
+        max-width: 992px;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+
+        p {
+            position: absolute;
+            bottom: 80px;
+            font-family: TTInterfaces-Bold, sans-serif;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 58px;
+            color: $white;
+            margin-left: 64px;
+        }
+
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.loading-dots {
+    text-align: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #00000069;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes showHideDot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1800px) {
+    .main {
+        .login__box {
+            margin-left: 250px;
+        }
+    }
+}
+
+@media (max-width: 1700px) {
+    .main {
+        .login__box {
+            margin-left: 200px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .main {
+        .login__box {
+            margin-left: 150px;
+        }
+    }
+}
+
+@media (max-width: 1530px) {
+    .main {
+        .login__box {
+            margin-left: 100px;
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .main {
+        .loginSecond__box {
+            max-width: 800px;
+            p {
+                font-size: 40px;
+            }
+        }
+
+        .login__box {
+            margin-left: 180px;
+        }
+    }
+}
+
+@media (max-width: 1360px) {
+    .main {
+        .login__box {
+            margin-left: 130px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .main {
+        .login__box {
+            margin-left: 100px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .main {
+        .loginSecond__box {
+            max-width: 700px;
+            p {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1155px) {
+    .main {
+        .login__box {
+            margin: 0 50px;
+        }
+
+        .loginSecond__box {
+            p {
+                margin-left: 30px;
+            }
+        }
+    }
+}

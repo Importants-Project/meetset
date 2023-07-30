@@ -1,0 +1,8 @@
+@mixin FontFace($nameFont, $srcFont) {
+    @font-face {
+        font-family: $nameFont;
+        src: url($srcFont);
+        font-style: normal;
+        font-display: swap;
+    }
+}

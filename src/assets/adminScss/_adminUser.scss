@@ -1,0 +1,108 @@
+.user {
+    border-radius: 12px;
+    margin-top: 24px;
+    border: 1px solid #e3e8ef;
+    
+    &__item {
+        padding: 10px 24px;
+        margin: 14px 24px 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     &:not(:first-child){
+        padding: 40px 24px 20px;
+
+        border-top: 1px solid #E3E8EF;
+     }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 48px;
+            height: 56px;
+            margin-right: 12px;
+        }
+
+        &-title {
+            font-family: TTInterfaces-Bold, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E293B;
+            line-height: 22px;
+        }
+
+        .name{
+            margin-bottom: 8px;
+        }
+
+        .number,
+        .emailName{
+            margin-top: 8px;
+            overflow:hidden;
+            display:inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 260px;
+        }
+
+        .phone,
+        .email {
+            width: 300px;
+        }
+
+        &-subtitle {
+            font-family: TTInterfaces-Regular, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #1E293B;
+            line-height: 20px;
+display: block;
+            
+        }
+
+        
+        &-box {
+            display: block;
+        }
+
+
+        &-edit{
+
+
+            width: 109px;
+            margin-right: 10px;
+        }
+
+        &-remove {
+
+            width: 44px;
+
+        }
+
+        &-edit,
+        &-remove {
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            height: 44px;
+
+            background: $white;
+
+            border: 1px solid #cdd5df;
+            border-radius: 8px;
+
+            
+            font-family: TTInterfaces-Medium , sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+        }
+    }
+}

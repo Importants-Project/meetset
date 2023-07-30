@@ -1,0 +1,58 @@
+.adminHeader {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        font-family: TTInterfaces-Bold,sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #121926;
+        line-height: 35px;
+    }
+
+    &__modules {
+        display: flex;
+        align-items: center;
+
+        .modalButton {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12.5px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            span {
+                margin-top: 1px;
+                font-family: TTInterfaces-DemiBold, sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0 10px;
+            }
+        }
+
+        &-users {
+            margin-right: 12px;
+            background: $white;
+            border: 1px solid #155eef;
+            color: #121926;
+        }
+
+        &-rooms {
+            margin-right: 12px;
+            background: #155eef;
+            color: $white;
+
+        }
+
+        &-portfolio{
+            background: $white;
+            color: #121926;
+            border: 1px solid #9AA4B2;
+
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.flexCalendar {
+    display: flex;
+    padding: 0 20px;
+
+    .table-wrapper {
+        width: 100%;
+        margin-left: 20px;
+        overflow-x: auto;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: unset !important;
+}
+
+.fc-direction-ltr .fc-timeline-event.fc-event-end,
+.fc-direction-ltr .fc-timeline-more-link {
+    margin-top: 5px;
+}
+
+.fc-timeline-event:not(.fc-event-end):after,
+.fc-timeline-event:not(.fc-event-start):before {
+    display: none;
+}
+
+.fc-timeline-event {
+    height: 56px;
+    border-radius: 12px !important;
+    background: rgba(178, 204, 255, 1);
+    border: 1px solid transparent;
+
+    .fc-event-title {
+        visibility: hidden;
+    }
+}
+
+.fc .fc-timeline-event {
+    margin: -5px;
+}
+
+.fc-timeline-event-harness {
+    .activeUser {
+        background: rgba(21, 94, 239, 1) !important;
+    }
+}
+
+.fc .fc-resource-timeline-flat .fc-datagrid-expander-placeholder {
+    display: inline-block !important;
+
+    //&:first() {
+    //    display: none !important;
+    //}
+}
+
+.fc .fc-datagrid-header .fc-datagrid-cell-frame {
+    align-items: flex-start !important;
+}
+
+.fc {
+    .fc-datagrid-header {
+        thead {
+            .fc-datagrid-cell-main {
+                font-weight: 700;
+                color: #121926;
+            }
+        }
+    }
+}
+
+.fc-scroller-harness {
+    tbody {
+        tr {
+            height: max-content;
+        }
+    }
+}
+
+.fc .fc-resource-timeline-divider {
+    cursor: default;
+    width: 0px !important;
+}
+
+.fc-theme-standard td {
+    height: 68px;
+}
+.fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+}
+
+.fc-license-message,
+.fc-toolbar-chunk {
+    display: none;
+}
+
+.fc-media-screen {
+    width: 100%;
+}
+
+.fc .fc-timeline-header-row-chrono .fc-timeline-slot-frame {
+    justify-content: center;
+}
+
+.fc .fc-scrollgrid {
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+.fc-datagrid-cell-frame {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100% !important;
+}
+
+.fc th {
+    font-family: TTInterfaces-Bold, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(18, 25, 38, 1);
+}
+
+.fc-datagrid-cell-cushion {
+    font-family: TTInterfaces-Medium, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(54, 65, 82, 1);
+    padding: 24px 24px !important;
+}
+
+@media(max-width: 1500px) {
+    .fc-datagrid-cell-cushion {
+        font-size: 12px;
+        padding: 24px 0 !important;
+    }
+
+    .fc th {
+        font-size: 13px;
+    }
+    .fc table {
+        font-size: 13px;
+    }
+}
+
+.e-input-group.e-error,
+.e-input-group.e-control-wrapper.e-error,
+.e-input-group.e-error:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+    border-bottom-color: transparent !important;
+}
+
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before {
+    background-color: transparent !important;
+}
+
+.e-input:focus:not(.e-success):not(.e-warning):not(.e-error) {
+    border-color: transparent !important;
+}
+
+.e-input-group input.e-input::selection,
+.e-input-group.e-control-wrapper input.e-input::selection {
+    color: #364152;
+    background-color: transparent;
+}
+
+.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error:not(.e-float-input)::after {
+    background: transparent !important;
+}
+
+.e-input-group.e-error input.e-input,
+.e-input-group.e-control-wrapper.e-error input.e-input {
+    border-color: transparent !important;
+    padding: 0 !important;
+}
+
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after {
+    background-color: transparent !important;
+}
+
+
+.fc-h-event {
+    background-color: rgb(178, 204, 255) !important;
+    border-color: transparent !important;
+}

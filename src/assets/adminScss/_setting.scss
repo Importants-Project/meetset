@@ -1,0 +1,102 @@
+.setting {
+    position: relative;
+    max-width: 676px;
+
+    &__title {
+        color: #121926;
+        font-family: TTInterfaces-DemiBold, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        margin: 28px 0 32px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label {
+        font-family: TTInterfaces-Regular, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #364152;
+        margin-bottom: 18px;
+    }
+
+    .input {
+        height: 56px;
+        border: 1px solid #cdd5df;
+        border-radius: 8px;
+        padding: 16px;
+        width: 328px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #364152;
+        font-weight: 400;
+        margin-right: 20px;
+        font-family: TTInterfaces-Regular, sans-serif;
+
+        &__100 {
+            width: 100% !important;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #364152;
+        }
+
+        &__height {
+            height: 120px;
+        }
+
+        &[type="date"]::-webkit-calendar-picker-indicator {
+            background: url("./images/svg/calendar.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+
+        &[type="time"]::-webkit-calendar-picker-indicator {
+            background: url("./images/svg/time.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__save {
+        background: rgba(21, 94, 239, 1);
+        padding: 0 24px;
+        margin-top: 40px;
+        border-radius: 8px;
+        width: 212px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        color: $white;
+        justify-content: center;
+        border: transparent;
+        cursor: pointer;
+        outline: none;
+
+        font-family: TTInterfaces-DemiBold, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        span {
+            margin-left: 12px;
+        }
+    }
+
+    .uploadFile {
+        margin-top: 50px;
+    }
+}
